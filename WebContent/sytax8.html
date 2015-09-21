@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>JavaScript is Case Sensitive</title>
+</head>
+<body>
+
+<p id="demo"></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+
+<script>
+
+var lastName = "Doe";
+var lastname = "Peterson";
+
+//변수명 대소문자 구분함.
+document.getElementById("demo").innerHTML = lastName;
+document.getElementById("demo2").innerHTML = lastname;
+document.getElementById("demo3").innerHTML = lastName + " " + lastname;
+	
+</script>
+
+</body>
+</html>
