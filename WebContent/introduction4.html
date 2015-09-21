@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>JavaScript Can Validate Data</title>
+</head>
+<body>
+
+<h1>JavaScript Can Validate Input</h1>
+
+<p>1에서 10 사이의 숫자를 입력하여 주십시오.</p>
+
+<input id="number" type ="number">
+
+<button type="button" onclick="myFunction()">클릭</button>
+
+<p id="demo"></p>
+
+<script type="text/javascript">
+	function myFunction(){
+		
+		var x, text;
+		
+		x = document.getElementById("number");
+		
+		if(isNaN(x.value) || x.value < 1 || x.value > 10){
+			text = "1에서 10 사이의 숫자를 입력하여 주십시오."
+		}else{
+			text = "valid OK";
+		}
+		
+		document.getElementById('demo').innerHTML = text;
+	}
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>JavaScript Can Change Images</title>
+</head>
+<body>
+
+<h1>JavaScript Can Change Images</h1>
+
+<img id="myImage" onclick="changeImage('myImage')" src="images/pic_bulboff.gif" width="100" height="180">
+
+<p>이미지 클릭 시 전구가 켜졌다 꺼졌다 합니다.</p>
+
+<script>
+function changeImage(id){
+	
+	var image = document.getElementById(id);
+	
+	if(image.src.match("bulbon")){
+		image.src = "images/pic_bulboff.gif"
+	}else{
+		image.src = "images/pic_bulbon.gif"
+	}
+}
+
+</script>
+
+</body>
+</html>
