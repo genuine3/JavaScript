@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Converting to Upper and Lower Case</title>
+</head>
+<body>
+
+<button onclick="myFunction()">Try it</button>
+<button onclick="myFunction2()">Try it</button>
+
+<p id="demo">Hello World!</p>
+<p id="demo1">HELLO WORLD!</p>
+
+<script>
+
+	function myFunction() {
+	    var text = document.getElementById("demo").innerHTML;
+	    document.getElementById("demo").innerHTML = text.toUpperCase();
+	}
+	
+	function myFunction2() {
+	    var text = document.getElementById("demo").innerHTML;
+	    document.getElementById("demo1").innerHTML = text.toLowerCase();
+	}
+	
+</script>
+
+</body>
+</html>

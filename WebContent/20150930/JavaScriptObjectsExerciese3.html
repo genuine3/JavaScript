@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Exercises</title>
+</head>
+<body>
+
+<h1>Create an object called person with name = John, age = 50.
+Then, access the object to display "John is 50 years old".</h1>
+<p id="demo"></p>
+
+<script>
+
+	var person = {name:"John", 
+					age:50, 
+					display : function(){
+						return	this.name + " is " + this.age + " years old";
+					} 
+				};
+	
+	document.getElementById("demo").innerHTML = person.display();
+
+</script>
+
+</body>
+</html>

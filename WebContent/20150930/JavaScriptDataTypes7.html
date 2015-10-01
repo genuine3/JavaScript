@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Null</title>
+</head>
+<body>
+
+<p id="demo"></p>
+<p id="demo1"></p>
+
+<script>
+
+	var person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};
+	var person = null;
+	document.getElementById("demo").innerHTML = typeof person;
+	
+	
+	var person1 = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};
+	var person1 = undefined;
+	document.getElementById("demo1").innerHTML = typeof person1;
+
+</script>
+
+</body>
+</html>
+
+

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Object Definition</title>
+</head>
+<body>
+
+<p id="demo"></p>
+<p id="demo1"></p>
+
+<script>
+
+	var person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};
+	
+	document.getElementById("demo").innerHTML =	person.firstName + " is " + person.age + " years old.";
+	
+	var person = {
+				    firstName : "John",
+				    lastName  : "Doe",
+				    age       : 50,
+				    eyeColor  : "blue"
+				};
+
+		document.getElementById("demo1").innerHTML = person.firstName + " is " + person.age + " years old.";
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Global Variables in HTML</title>
+</head>
+<body>
+
+<p id="demo"></p>
+
+<script>
+	
+	myFunction();
+	document.getElementById("demo").innerHTML =	"I can display " + window.carName;
+	
+	function myFunction() {
+	    carName = "Volvo";
+	}
+
+</script>
+
+</body>
+</html>

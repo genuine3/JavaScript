@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>The slice() Method</title>
+</head>
+<body>
+
+<p id="demo"></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+<p id="demo4"></p>
+
+<script>
+
+	var str = "Apple, Banana, Kiwi";
+	
+	document.getElementById("demo").innerHTML = str.slice(7,13);	//substring과 유사
+	document.getElementById("demo2").innerHTML = str.slice(-12,-6);	//음수 사용시 마지막부터 선택한다.
+	document.getElementById("demo3").innerHTML = str.slice(7);		//두번째 값 생략 가능
+	document.getElementById("demo4").innerHTML = str.slice(-12);
+	
+</script>
+
+</body>
+</html>

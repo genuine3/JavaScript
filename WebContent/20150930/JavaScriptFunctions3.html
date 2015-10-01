@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Functions Used as Variables</title>
+</head>
+<body>
+
+<p id="demo"></p>
+
+<script>
+
+	document.getElementById("demo").innerHTML =	"The temperature is " + toCelsius(77) + " Celsius";
+
+	function toCelsius(fahrenheit) {
+	    return (5/9) * (fahrenheit-32);
+	} 
+
+</script>
+
+</body>
+</html>

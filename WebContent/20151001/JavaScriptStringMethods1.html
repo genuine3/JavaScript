@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Finding a String in a String</title>
+</head>
+<body>
+
+<p id="p1">Please locate where 'locate' occurs!.</p>
+
+<button onclick="myFunction()">Try it</button>
+<button onclick="myFunction2()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+
+	function myFunction() {
+	    var str = document.getElementById("p1").innerHTML;
+	    var pos = str.indexOf("locate");	// 특정 문자의 위치
+	    document.getElementById("demo").innerHTML = pos;
+	}
+	
+	function myFunction2() {
+	    var str = document.getElementById("p1").innerHTML;
+	    var pos = str.lastIndexOf("locate");	//특정 문자의 마지막 위치
+	    document.getElementById("demo").innerHTML = pos;
+	}
+	
+</script>
+
+</body>
+</html>

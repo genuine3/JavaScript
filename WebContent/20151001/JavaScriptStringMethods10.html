@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Converting a String to an Array</title>
+</head>
+<body>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+<p id="demo1"></p>
+
+<script>
+
+	function myFunction() {
+	    var str = "a,b,c,d,e,f";
+	    var arr = str.split(",");	// ',' 기준 짤라서 arr(배열형식)에 삽입
+	    document.getElementById("demo").innerHTML = arr[0];
+	}
+	
+	var str1 = "Hello";
+	var arr1 = str1.split("");
+	var text = "";
+	var i;
+	
+	for (i = 0; i < arr1.length; i++) {
+	    text += arr1[i] + "<br>"
+	}
+	
+	document.getElementById("demo1").innerHTML = text;
+
+</script>
+
+</body>
+</html>
