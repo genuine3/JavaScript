@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>NaN - Not a Number</title>
+</head>
+<body>
+
+<p>A number divided by a non-numeric string becomes NaN (Not a Number):</p>
+
+<p id="demo"></p>
+<p id="demo1"></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+<p id="demo4"></p>
+<p id="demo5"></p>
+
+<script>
+
+	document.getElementById("demo").innerHTML = 100 / "Apple";
+
+	document.getElementById("demo1").innerHTML = 100 / "10";
+	
+	var x = 100 / "Apple";
+	document.getElementById("demo2").innerHTML = isNaN(x); // 숫자면 false 아니면 true
+	
+	var y = NaN;
+	var z = 5;
+	document.getElementById("demo3").innerHTML = y + z;
+	
+	var x1 = NaN;
+	var y1 = "5";
+	document.getElementById("demo4").innerHTML = x1 + y1;
+	
+	document.getElementById("demo5").innerHTML = typeof NaN;
+	
+</script>
+
+</body>
+</html>
+
+
