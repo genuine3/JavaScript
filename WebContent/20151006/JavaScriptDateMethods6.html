@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Date Input - Parsing Dates</title>
+</head>
+<body>
+
+<p id="demo"></p>
+<p id="demo1"></p>
+
+<script>
+
+	var msec = Date.parse("March 21, 2012");
+	document.getElementById("demo").innerHTML = msec;
+	
+	var d = new Date(msec);
+	document.getElementById("demo1").innerHTML = d;
+	
+</script>
+
+</body>
+</html>
