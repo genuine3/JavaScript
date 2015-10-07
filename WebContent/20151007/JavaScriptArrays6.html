@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Looping Array Elements</title>
+</head>
+<body>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+
+	function myFunction() {
+	    var index;
+	    var text = "<ul>";	//<ul> 태그는 Unordered List로 순서가 없는 리스트 생성
+	    var fruits = ["Banana", "Orange", "Apple", "Mango"];
+	    
+	    for(index = 0; index < fruits.length; index++) {
+	        text += "<li>" + fruits[index] + "</li>";
+	    }
+	    
+	    text += "</ul>";
+	    document.getElementById("demo").innerHTML = text;
+	}
+	
+</script>
+</body>
+</html>
