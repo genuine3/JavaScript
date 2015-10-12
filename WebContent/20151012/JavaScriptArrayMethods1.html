@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Converting Arrays to Strings</title>
+</head>
+<body>
+
+
+<p id="demo"></p>
+<p id="demo1"></p>
+<p id="demo2"></p>
+
+<script>
+
+	// valueOf 와 toString 은 배열의 구성요소를 문자열 형태로 돌려주는 역활
+
+	var fruits = ["Banana", "Orange", "Apple", "Mango"];
+	document.getElementById("demo").innerHTML = fruits.valueOf();
+	
+	document.getElementById("demo1").innerHTML = fruits.toString();
+	
+	//배열의 항목을 모두 합쳐서 문자열로 만들수 있음, 추가적인 문자열 삽입 가능.
+	document.getElementById("demo2").innerHTML = fruits.join(" * ");
+	
+</script>
+
+</body>
+</html>

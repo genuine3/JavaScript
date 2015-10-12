@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Shifting Elements</title>
+</head>
+<body>
+
+<button onclick="myFunction()">myFunction</button>
+<button onclick="myFunction1()">myFunction1</button>
+
+<p id="demo"></p>
+<p id="demo1"></p>
+
+<script>
+
+	var fruits = ["Banana", "Orange", "Apple", "Mango"];
+	var fruits1 = ["Banana", "Orange", "Apple", "Mango"];
+	
+	document.getElementById("demo").innerHTML = fruits;
+	document.getElementById("demo1").innerHTML = fruits1;
+	
+	function myFunction() {
+		//shift()는 배열의 첫번째 값 제거
+	    fruits.shift();
+	    document.getElementById("demo").innerHTML = fruits;
+	}
+	
+	function myFunction1() {
+		//unshift() 배열의 첫번째에 값 추가
+	    fruits1.unshift("Lemon");
+	    document.getElementById("demo1").innerHTML = fruits1;
+	}
+	
+</script>
+
+</body>
+</html>

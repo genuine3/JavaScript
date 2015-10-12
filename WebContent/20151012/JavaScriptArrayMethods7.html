@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Splicing an Array, Using splice() to Remove Elements</title>
+</head>
+<body>
+
+<button onclick="myFunction()">myFunction</button>
+<button onclick="myFunction1()">myFunction</button>
+
+<p id="demo"></p>
+<p id="demo1"></p>
+
+<script>
+
+	var fruits = ["Banana", "Orange", "Apple", "Mango"];
+	document.getElementById("demo").innerHTML = fruits;
+	
+	var fruits1 = ["Banana", "Orange", "Apple", "Mango"];
+	document.getElementById("demo1").innerHTML = fruits1;
+	
+	function myFunction() {
+		//첫번째 인자값 어느위치에 추가할건지, 두번째 인자값 기존 값 몇개 제거할건지, 그 뒤는 추가 할 값들
+	    fruits.splice(2,0, "Lemon", "Kiwi");
+	    document.getElementById("demo").innerHTML = fruits;
+	}
+	
+	function myFunction1() {
+	    fruits1.splice(0, 1);
+	    document.getElementById("demo1").innerHTML = fruits1;
+	}
+	
+</script>
+
+</body>
+</html>
