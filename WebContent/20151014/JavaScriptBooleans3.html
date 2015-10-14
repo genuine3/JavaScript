@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Everything Without a "Real" is False</title>
+</head>
+<body>
+
+<button onclick="myFunction()">try it 0</button>
+<button onclick="myFunction1()">try it -0</button>
+<button onclick="myFunction2()">try it ""</button>
+<button onclick="myFunction3()">try it x</button>
+<button onclick="myFunction4()">try it 10 / H</button>
+
+<p id="demo"></p>
+<p id="demo1"></p>
+
+<script>
+
+	function myFunction(){
+		var x = 0;
+		document.getElementById("demo").innerHTML = Boolean(x);
+		document.getElementById("demo1").innerHTML = Boolean(0);
+	}
+	
+	function myFunction1() {
+	    var x = -0;
+	    document.getElementById("demo").innerHTML = Boolean(x);
+	    document.getElementById("demo1").innerHTML = Boolean(-0);
+	}
+	
+	function myFunction2() {
+	    var x = "";
+	    document.getElementById("demo").innerHTML = Boolean(x);
+	    document.getElementById("demo1").innerHTML = Boolean("");
+	}
+	
+	function myFunction3() {
+	    var x;
+	    document.getElementById("demo").innerHTML = Boolean(x);
+	}
+	
+	function myFunction4() {
+	    var x = 10 / "H";
+	    document.getElementById("demo").innerHTML = Boolean(x);
+	}
+	
+</script>
+
+</body>
+</html>

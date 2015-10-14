@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Everything With a "Real" Value is True</title>
+</head>
+<body>
+
+<p id="demo"></p>
+
+<script>
+
+	var b1 = Boolean(100);//B 대문자로 해야함....소문자 오류
+	var b2 = Boolean(3.14);
+	var b3 = Boolean(-15);
+	var b4 = Boolean("Hello");
+	var b5 = Boolean('false');
+	var b6 = Boolean(1+7+3.14);
+	var b7 = Boolean(false);
+	//document.getElementById("demo").
+	document.getElementById("demo").innerHTML = 	"100 is " + b1 + "<br>" +
+													"3.14 is " + b2 + "<br>" +
+													"-15 is " + b3 + "<br>" +
+													"Any (not empty) string is " + b4 + "<br>" +
+													"Even the string 'false' is " + b5 + "<br>" +
+													"Any expression (except zero) is " + b6 + "<br>" +
+													"Boolean(false) is " + b7;
+	
+</script>
+
+</body>
+</html>

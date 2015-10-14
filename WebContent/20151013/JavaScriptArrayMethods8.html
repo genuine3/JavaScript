@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Sorting an Array, Reversing an Array</title>
+</head>
+<body>
+
+<button onclick="myFunction()">myFunction</button>
+<button onclick="myFunction1()">myFunction</button>
+
+<p id="demo"></p>
+<p id="demo1"></p>
+
+<script>
+
+	var fruits = ["Banana", "Orange", "Apple", "Mango"];
+	document.getElementById("demo").innerHTML = fruits;
+	document.getElementById("demo1").innerHTML = fruits;
+	
+	function myFunction() {
+		//알파벳순 정렬
+	    fruits.sort();
+	    document.getElementById("demo").innerHTML = fruits;
+	}
+	
+	function myFunction1() {
+	    fruits.sort();
+	    fruits.reverse();
+	    document.getElementById("demo1").innerHTML = fruits;
+	}
+		
+</script>
+
+</body>
+</html>
