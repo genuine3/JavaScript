@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Exercise</title>
+</head>
+<body>
+ 
+<h1>The if/else statement does not work. Try to fix it.</h1>
+
+<p id="demo"></p>
+
+<script>
+
+	var greeting;
+	var hour = new Date().getHours();
+	
+	if (hour < 18) {
+	    greeting = "Good day";
+	}else{
+	    greeting = "Good evening";
+	}
+	
+	document.getElementById("demo").innerHTML = greeting;
+	
+</script>
+
+</body>
+</html>

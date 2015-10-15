@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>The if Statement</title>
+</head>
+<body>
+ 
+<button onclick="myFunction()">Try it</button>
+ 
+<p id="demo"></p>
+<p id="demo1"></p>
+
+<script>
+
+	if (new Date().getHours() < 18) {
+	    document.getElementById("demo").innerHTML = "Good day!";
+	}
+	
+	function myFunction() {
+	    var hour = new Date().getHours(); 
+	    var greeting;
+	    if (hour < 18) {
+	        greeting = "Good day";
+	    } else {
+	        greeting = "Good evening";
+	    }
+	    document.getElementById("demo1").innerHTML = greeting;
+	}
+
+</script>
+
+</body>
+</html>
