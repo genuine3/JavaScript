@@ -6,17 +6,19 @@
 </head>
 <body>
 
-<h1>Inside the script element; change num1 to 0 and num2 to 10 and run the code.</h1>
+<h1>Make the loop start counting from 5. Count up to (including) 50 and count only every fifth number.</h1>
  
 <p id="demo"></p>
 
 <script>
 
-	var i = 0;
-	while (i < 10) {
+	var i = 5;
+	
+	while (i <= 50) {
 	    document.getElementById("demo").innerHTML += i + "<br>";
-	    i++;
+	    i+=5;
 	}
+	
 </script>
 
 </body>
