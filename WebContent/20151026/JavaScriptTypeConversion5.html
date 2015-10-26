@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>The Unary + Operator</title>
+</head>
+<body>
+ 
+<button onclick="myFunction()">Try it</button>
+<button onclick="myFunction1()">Try it</button>
+
+<p id="demo"></p>
+<p id="demo1"></p>
+
+<script>
+	
+	function myFunction() {
+		
+	    var y = "5";
+	    var x = + y;
+	    
+	    document.getElementById("demo").innerHTML =	typeof y + "<br>" + typeof x;
+	}
+
+	function myFunction1() {
+	 
+		var y = "John";
+	    var x = + y;
+	    
+	    document.getElementById("demo1").innerHTML = typeof x + "<br>" + x;
+	    
+	}
+	
+</script>
+
+</body>
+</html>

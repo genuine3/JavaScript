@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Exercise</title>
+</head>
+<body>
+
+<h1>Use the continue statement to not output the array's element "Saab".</h1>
+ 
+<p id="demo"></p>
+
+<script>
+
+	var cars = ["BMW", "Volvo", "Saab", "Ford"];
+	var text = ""
+	var i;
+	
+	for (i = 0; i < cars.length; i++) {
+		if(cars[i] === "Saab") continue;
+	    text += cars[i] + "<br>";
+	}
+	
+	document.getElementById("demo").innerHTML = text;
+
+</script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Automatic Type Conversion</title>
+</head>
+<body>
+ 
+<p id="demo"></p>
+
+<script>
+	
+	var x = [];
+	
+	document.getElementById("demo").innerHTML = (5 + null) + "<br>"  +
+												("5" + null) + "<br>" +
+												("5" + 2) + "<br>" +
+												("5" - 2) + "<br>" +
+												("5" * "2") + "<br>" +
+												("5" / "2") + "<br>";
+	
+</script>
+
+</body>
+</html>
