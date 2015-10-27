@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Using the RegExp Object : Using test()</title>
+</head>
+<body>
+
+<p id="p01">The best things in life are free!</p>
+<button onclick="myFunction()">Try it</button>
+<p id="demo"></p>
+
+<script>
+	
+	function myFunction() {
+	    text = document.getElementById("p01").innerHTML; 
+	    document.getElementById("demo").innerHTML = /e/.test(text);
+	}
+	
+</script>
+
+</body>
+</html>
