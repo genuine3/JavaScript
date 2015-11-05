@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Errors Will Happen!</title>
+</head>
+<body>
+
+<p id="demo"></p>
+
+<script>
+	
+	try {
+	    adddlert("Welcome guest!");
+	}
+	catch(err) {
+	    document.getElementById("demo").innerHTML = err.message;
+	}
+	
+</script>
+	
+</body>
+</html>

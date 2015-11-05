@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>JavaScript Initializations are Not Hoisted</title>
+</head>
+<body>
+
+<p id="demo"></p>
+<p id="demo1"></p>
+
+<script>
+
+	var x = 5;
+	var y;
+	
+	elem = document.getElementById("demo"); 
+	elem.innerHTML = x + " " + y;
+	
+	y = 7;
+	
+</script>
+	
+</body>
+</html>
