@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>JavaScript Function Invocation</title>
+</head>
+<body>
+
+<p>In HTML the value of <b>this</b>, in a global function, is the window object.</p>
+
+<p id="demo"></p>
+
+<script>
+	function myFunction() {
+	    return this;
+	}
+	document.getElementById("demo").innerHTML = myFunction(); 
+</script>
+
+</body>
+</html>
