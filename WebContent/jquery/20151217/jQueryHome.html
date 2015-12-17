@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script>
+	$(document).ready(function(){
+	    $("p").click(function(){
+	        $(this).hide();
+	    });
+	});
+</script>
+</head>
+<body>
+
+<p>If you click on me, I will disappear.</p>
+<p>Click me away!</p>
+<p>Click me too!</p>
+
+
+$("p").hide()<br>
+ Demonstrates the jQuery hide() method, hiding all <p> elements.<br><br>
+
+$("#test").hide() "#" = id<br>
+ Demonstrates the jQuery hide() method, hiding the element with id="test".<br><br>
+
+$(".test").hide() "." = class<br>
+ Demonstrates the jQuery hide() method, hiding all elements with class="test".<br><br>
+
+$(this).hide()<br>
+ Demonstrates the jQuery hide() method, hiding the current HTML element.<br><br>
+
+</body>
+</html>
