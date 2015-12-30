@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>jQuery Slide Exercises</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("button").click(function(){
+        $("div").slideToggle(1000);
+    });
+});
+</script>
+</head>
+<body>
+
+<button>Click to slide up/down div</button><br><br>
+
+<div style="width:80px;height:80px;background-color:red;"></div>
+
+</body>
+</html>
