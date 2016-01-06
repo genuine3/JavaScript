@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>jQuery - Get Exercises</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#button").click(function(){
+        alert($("a").attr("href"));
+    });
+});
+</script>
+</head>
+<body>
+
+<h2>Alert the URL address of the link.</h2>
+
+<a href="http://www.w3schools.com">W3Schools</a>
+
+</body>
+</html>
