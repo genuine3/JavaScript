@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>jQuery - Remove Elements</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("p").remove(".test");
+});
+</script>
+<style>
+.test {
+    color: red;
+    font-size: 20px;
+}
+</style>
+</head>
+<body>
+
+<p>This is a paragraph.</p>
+<p class="test">This is another paragraph.</p>
+<p class="test">This is another paragraph.</p>
+
+<h2>Use a jQuery method to remove all <p> elements with class="test".</h2>
+
+</body>
+</html>
