@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>jQuery Traversing - Test Yourself with Exercises!</title>
+<style>
+.descendants * { 
+    display: block;
+    border: 2px solid lightgrey;
+    color: lightgrey;
+    padding: 5px;
+    margin: 15px;
+}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+	$("div").children(":first").css({"color": "red"});
+});
+</script>
+</head>
+<body>
+
+<div class="descendants" style="width:500px;">div (parent) 
+  <p>first p (child)</p>
+  <p>second p (child)</p> 
+</div>
+
+<h2>Use the children() method to add a red color to the first child element of div.</h2>
+
+</body>
+</html>
