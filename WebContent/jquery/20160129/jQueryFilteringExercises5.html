@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>jQuery Traversing - Filtering</title>
+<script>
+$(document).ready(function(){
+    $("p").not(".intro").css({"color" : "red"});
+});
+</script>
+</head>
+<body>
+
+<p>First paragraph.</p>
+<p class="intro">Second paragraph.</p>
+<p class="intro">Third paragraph.</p>
+<p>Last paragraph.</p>
+
+<h2>Add a red color to all p elements that do not have the class name "intro".</h2>
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>jQuery Traversing - Filtering</title>
+<script>
+$(document).ready(function(){
+    $("div p").last().css({"background-color" : "yellow"});
+});
+</script>
+</head>
+<body>
+
+<div style="border: 1px solid black;">
+  <p>This is the first paragraph in a div.</p>
+  <p>This is the last paragraph in a div.</p>
+</div><br>
+
+<div style="border: 1px solid black;">
+  <p>This is the first paragraph in another div.</p>
+  <p>This is the last paragraph in another div.</p>
+</div>
+
+<h2>Add a yellow background color to the last p element inside the last div element.</h2>
+
+</body>
+</html>
